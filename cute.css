@@ -1,5 +1,9 @@
+body {
+    background-color: #38D5EB;
+}
+
 .button {
-  background-color: #38D5EB;
+  background-color: #FFFFF;
   border: none;
   color: white;
   padding: 20px;
