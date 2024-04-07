@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<head>
-<style>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    .button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #38D5EB;
-    background-color: #38D5EB;
-    border: none;
-    border-radius: 15px;
-  }
-  .button:hover {background-color: #00DD8C}
-
-  .button:active {
-    background-color: #00DD8C;
-    transform: translateY(4px);
-  }
-  </style>
   <title>Phishing Detection</title>
   <style>
-    {
+    * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box
+      box-sizing: border-box;
     }
 
     header {
-      background-color:#38D5EB;
+      background-color: #38D5EB;
       color: #fff;
-      padding: 10x;
+      padding: 10px; /* Changed from 10x to 10px */
       text-align: center;
     }
 
     main {
-      padding: 20x;
+      padding: 20px; /* Changed from 20x to 20px */
     }
 
     footer {
-      background-color:#38D5EB;
+      background-color: #38D5EB;
       color: #fff;
-      padding: 10x;
+      padding: 10px; /* Changed from 10x to 10px */
       text-align: center;
+    }
+
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #38D5EB;
+      background-color: #38D5EB;
+      border: none;
+      border-radius: 15px;
+    }
+    .button:hover {
+      background-color: #00DD8C;
+    }
+
+    .button:active {
+      background-color: #00DD8C;
+      transform: translateY(4px);
     }
   </style>
 </head>
 <body>
-  <h1>Let's check if this email is a scam</h1>
-  <img src="cat1.png" id="cat">
-  <button class="button" style="background:#38D5EB;color:black;">Run</button>
-    <script src="gmail.gs"></script>
-  </body>
+  <header>
+    <h1>Let's check if this email is a scam</h1>
+  </header>
+  <main>
+    <img src="cat1.png" id="cat">
+    <button class="button" style="background:#38D5EB;color:black;">Run</button>
+    <!-- Include your script here if necessary -->
+  </main>
+  <footer>
+    <p>Footer content here</p>
+  </footer>
+</body>
 </html>
