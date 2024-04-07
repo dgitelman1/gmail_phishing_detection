@@ -3,10 +3,9 @@
   "description": "Detects scam emails",
   "version": "1.0",
   "manifest_version": 3,
-  "browser_action": {
-    "default_popup": "./phishing.html",
-    "default_title": "Open the popup",
-    "default_icon":"./fish.png"
+  "action": {
+    "default_popup": "phishing.html",
+    "default_icon":"fish.png"
   },
   "background": {
     "service_worker": "background.js"
