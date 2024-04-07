@@ -13,19 +13,19 @@
     header {
       background-color: #38D5EB;
       color: #fff;
-      padding: 10px; /* Changed from 10x to 10px */
+      padding: 10px;
       text-align: center;
     }
 
     main {
-      padding: 20px; /* Changed from 20x to 20px */
+      padding: 20px; 
     }
 
-    footer {
-      background-color: #38D5EB;
-      color: #fff;
-      padding: 10px; /* Changed from 10x to 10px */
-      text-align: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
     }
 
     .button {
@@ -55,8 +55,9 @@
   </header>
   <main>
     <img src="cat1.png" id="cat">
-    <button class="button" style="background:#38D5EB;color:black;">Run</button>
-    <!-- Include your script here if necessary -->
+    <div class="container">
+      <button class="button" style="background:#38D5EB;color:black;">Run</button>
+    </div>
   </main>
   <footer>
     <p>Footer content here</p>
