@@ -15,5 +15,16 @@ chrome.action.onClicked.addListener(async (tab) => {
       tabId: tab.id,
       text: nextState,
     });
-  }
 });
+
+if (nextState === "ON") {
+  await chrome.scripting.insertCSS({
+        files: ["cute.css"],
+        target: { tabId: tab.id },
+      });
+    } else if (nextState === "OFF") {
+      // Remove the CSS file when the user turns the extension off
+      await chrome.scripting.removeCSS({
+        files: ["cute.css"],
+        target: { tabId: tab.id },
+      });
