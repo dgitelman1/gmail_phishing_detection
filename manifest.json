@@ -10,5 +10,13 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+  {
+    "js": ["extension.js"]
+  },
+  {
+    "js": ["gmailJsLoader.js"]
+  }
+  ],
   "permissions": ["activeTab", "scripting"]
 }
